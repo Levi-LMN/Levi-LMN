@@ -35,12 +35,7 @@ Unlock the secrets of security with this Python script for password cracking. Be
 
 This pie chart represents the distribution of languages across my repositories.
 
-- **Python**
-- **Java**
-- **JavaScript**
-- **HTML/CSS**
-- **C**
-- **Shell Scripting**
+
 
 ## 🌐 Connect with Me
 
