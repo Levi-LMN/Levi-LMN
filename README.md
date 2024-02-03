@@ -31,7 +31,7 @@ Unlock the secrets of security with this Python script for password cracking. Be
 
 ## 🛠️ Languages and Tools
 
-[![Top Languages](https://img.shields.io/github/languages/top/Levi-LMN/Levi-LMN?style=for-the-badge&logoColor=white)](https://github.com/Levi-LMN)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Levi-LMN&layout=compact&theme=radical)](https://github.com/Levi-LMN)
 
 This pie chart represents the distribution of languages across my repositories.
 
