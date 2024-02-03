@@ -29,6 +29,15 @@ Unlock the secrets of security with this Python script for password cracking. Be
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Levi-LMN&show_icons=true&theme=radical)
 
+## 🛠️ Languages and Tools
+
+- **Python**
+- **Java**
+- **JavaScript**
+- **HTML/CSS**
+- **C**
+- **Shell Scripting**
+
 ## 🌐 Connect with Me
 
 - [LinkedIn](https://www.linkedin.com/in/levi-mukuha/)
