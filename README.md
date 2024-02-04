@@ -25,13 +25,7 @@ Embark on a voyage into Reactland! Explore my notes, discoveries, and coding epi
 ### [Password-cracker](https://github.com/Levi-LMN/Password-cracker)
 Unlock the secrets of security with this Python script for password cracking. Because understanding security is the first step to securing.
 
-## 📊 GitHub Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=Levi-LMN&show_icons=true&theme=radical)
-
-## 🛠️ Languages and Tools
-
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Levi-LMN&layout=compact&theme=radical)](https://github.com/Levi-LMN)
 
 Behold the pie chart, illustrating the distribution of languages across my repositories.
 
