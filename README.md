@@ -27,8 +27,10 @@ Unlock the secrets of security with this Python script for password cracking. Be
 
 ## 📊 GitHub Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=Levi-LMN&show_icons=true&theme=radical)
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Levi-LMN&layout=compact&theme=radical)](https://github.com/Levi-LMN)
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github-readme-stats.vercel.app/api?username=Levi-LMN&show_icons=true&theme=radical" alt="GitHub stats" width="48%">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Levi-LMN&layout=compact&theme=radical" alt="Top Languages" width="48%">
+</div>
 
 Behold the charts, illustrating the distribution of languages and GitHub stats across my repositories.
 
