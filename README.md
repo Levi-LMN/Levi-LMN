@@ -1,33 +1,24 @@
 # 👋 Hello, I'm Levi Mukuha!
 
-Step into my digital realm, where the fusion of code and creativity intertwines seamlessly, and the concept of security transcends mere ideology.
+Welcome to my digital space, where code and creativity converge seamlessly, and security goes beyond ideology.
 
-## 🚀 A Peek into My World
+## 🚀 About Me
 
 - 📍 Proudly based in Nairobi, Kenya
-- 👨‍💻 Currently navigating the realms of Computer Science, with aspirations in the realm of Cyber Security
-- 💼 A mission-driven Full-stack Developer
+- 👨‍💻 Navigating the realms of Computer Science, aspiring in Cyber Security
+- 💼 Mission-driven Full-stack Developer
 
-## 🔥 Showcase Repositories
+## 🔥 Featured Repositories
 
-### [AcademeX](https://github.com/Levi-LMN/AcademeX)
-Unveil the potency of this Python-crafted School Management System, designed to bring order to the academic chaos.
+- [AcademeX](https://github.com/Levi-LMN/AcademeX): Python School Management System
+- [Java_Vortex_Venture](https://github.com/Levi-LMN/Java_Vortex_Venture): Java coding odyssey
+- [AutoHub](https://github.com/Levi-LMN/AutoHub): Flask-based car dealer website
+- [JourneyToReactopia](https://github.com/Levi-LMN/JourneyToReactopia): React exploration
+- [Password-cracker](https://github.com/Levi-LMN/Password-cracker): Python script for password cracking
 
-### [Java_Vortex_Venture](https://github.com/Levi-LMN/Java_Vortex_Venture)
-Embark on a coding odyssey as I master Java from scratch. Dive into my documented challenges, triumphs, and evolving code.
+## 📊 Languages Distribution
 
-### [AutoHub](https://github.com/Levi-LMN/AutoHub)
-Revolutionize your automotive experience with AutoHub, a dynamic Flask-based car dealer website boasting responsive design and style.
-
-### [JourneyToReactopia](https://github.com/Levi-LMN/JourneyToReactopia)
-Embark on a voyage into Reactland! Explore my notes, discoveries, and coding epiphanies within the realm of React.
-
-### [Password-cracker](https://github.com/Levi-LMN/Password-cracker)
-Unlock the secrets of security with this Python script for password cracking. Because understanding security is the first step to securing.
-
-
-
-Behold the pie chart, illustrating the distribution of languages across my repositories.
+Check out the pie chart illustrating the languages distribution across my repositories.
 
 ## 🌐 Let's Connect!
 
@@ -35,4 +26,4 @@ Behold the pie chart, illustrating the distribution of languages across my repos
 - [Twitter](https://twitter.com/YourTwitterHandle)
 - [Email](mailto:your.email@example.com)
 
-Feel free to delve into my repositories, and let's connect for inquiries or exciting collaboration ideas! Together, let's embark on a journey to code, create, and fortify the digital universe. 🚀🔒
+Feel free to explore my repositories and connect for inquiries or collaboration ideas! Let's embark on a journey to code, create, and fortify the digital universe. 🚀🔒
