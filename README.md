@@ -1,4 +1,4 @@
-# 👋 Greetings, I'm Levi Mukuha!
+# 👋 Hello, I'm Levi Mukuha!
 
 Step into my digital realm, where the fusion of code and creativity intertwines seamlessly, and the concept of security transcends mere ideology.
 
