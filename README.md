@@ -4,7 +4,7 @@ Welcome to my digital space, where code and creativity converge seamlessly, and 
 
 ## 🚀 About Me
 
-- 📍 Proudly based in Nairobi, Kenya
+- 📍  Based in Nairobi, Kenya
 - 👨‍💻 Navigating the realms of Computer Science, aspiring in Cyber Security
 - 💼 Mission-driven Full-stack Developer
 
