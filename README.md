@@ -18,7 +18,7 @@ Welcome to my digital space, where code and creativity converge seamlessly, and 
 
 ## 📊 Languages Distribution
 
-Check out the pie chart illustrating the languages distribution across my repositories.
+Check out the pie chart illustrating the languages distribution across my repositories
 
 ## 🌐 Let's Connect!
 
