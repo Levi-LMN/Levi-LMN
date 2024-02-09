@@ -23,7 +23,7 @@ Check out the pie chart illustrating the languages distribution across my reposi
 ## 🌐 Let's Connect!
 
 - [LinkedIn](https://www.linkedin.com/in/levi-mukuha/)
-- [Twitter](https://twitter.com/YourTwitterHandle)
+- [Twitter](https://twitter.com/Levi-LMN)
 - [Email](mailto:your.email@example.com)
 
 Feel free to explore my repositories and connect for inquiries or collaboration ideas! Let's embark on a journey to code, create, and fortify the digital universe. 🚀🔒
