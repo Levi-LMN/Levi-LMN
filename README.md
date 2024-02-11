@@ -26,4 +26,4 @@ Check out the pie chart illustrating the languages distribution across my reposi
 - [Twitter](https://twitter.com/Levi-LMN)
 - [Email](mailto:your.email@example.com)
 
-Feel free to explore my repositories and connect for inquiries or collaboration ideas! Let's embark on a journey to code, create, and fortify the digital universe. 🚀🔒
+Feel free to explore my repositories and connect for inquiries or collaboration ideas! Let's embark on a journey to code, create, and fortify the digital universe. 🚀🔒  
