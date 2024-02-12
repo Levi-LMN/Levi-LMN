@@ -27,3 +27,4 @@ Check out the pie chart illustrating the languages distribution across my reposi
 - [Email](mailto:your.email@example.com)
 
 Feel free to explore my repositories and connect for inquiries or collaboration ideas! Let's embark on a journey to code, create, and fortify the digital universe. 🚀🔒  
+https://gist.github.com/Levi-LMN/30483ccd8d0f4dcfbcdcfbac7f2dcd06
