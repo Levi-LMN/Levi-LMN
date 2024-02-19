@@ -1,8 +1,8 @@
 <h1 align="center">Hi 👋, I'm Levi Mukuha</h1>
 
-- 🔭 I’m currently working on **Ticketsphere**
+- 🔭 I’m currently working on **Ticketsphere - A public ticketing System**
 - 🌱 I’m currently learning **Java, PHP**
-- 💬 Ask me about **python**
+- 💬 Ask me about **python, Flask, Django, or C**
 - 📫 How to reach me **Mukuhalevi@gmail.com**
 - 👨‍💻 All of my projects are available at **https://github.com/Levi-LMN/Ticketsphere**
 
