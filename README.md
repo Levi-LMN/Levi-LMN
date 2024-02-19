@@ -1,4 +1,5 @@
 <h1 align="center">Hi 👋, I'm Levi Mukuha</h1>
+<i>A Fullstack software developer</i>
 
 - 🔭 I’m currently working on **Ticketsphere - A public ticketing System**
 - 🌱 I’m currently learning **Java, PHP**
