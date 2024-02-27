@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Levi Mukuha<br> <i>A Fullstack software developer.</i></h1>
 
-<!--![](https://komarev.com/ghpvc/?username=Levi-LMN)-->
+![](https://komarev.com/ghpvc/?username=Levi-LMN)
 
 - 🔭 I’m currently working on **Ticketsphere - A public ticketing System [Ticketsphere.com](https://lmn.pythonanywhere.com)**
 - 🌱 I’m currently learning **Java, PHP**
