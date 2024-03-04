@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Levi Mukuha<br> <i>A Fullstack software developer.</i></h1>
+<h1 align="center">Hi 👋, I'm Levi Mukuha<br> <i>A Fullstack software developer</i></h1>
 
 ![](https://komarev.com/ghpvc/?username=Levi-LMN)
 
