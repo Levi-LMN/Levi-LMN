@@ -6,7 +6,7 @@
 - 🌱 I’m currently learning **Java, PHP**
 - 💬 Ask me about **python, Flask, Django, C or #C**
 - 📫 How to reach me **Mukuhalevi@gmail.com**
-- 👨‍💻 All of my projects are available at **[Mukuhalevi.co.ke](https://levi-lmn.github.io/Portfolio/)**
+- 👨‍💻 All of my projects are available at **[Levimukuha.co.ke](https://levi-lmn.github.io/Portfolio/)**
 
 <div> <a href="https://github.com/Levi-LMN" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
 <a href = "mailto:Mukuhalevi@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
