@@ -1,0 +1,364 @@
+/* Base styles */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 12px;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Navbar styles */
+.navbar-text-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar-links li:last-child {
+    margin-right: 0;
+}
+
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffc107;
+}
+
+/* Section styles */
+section {
+    padding: 80px 0;
+}
+
+/* Home section */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    background-position: center top;
+    background-size: cover;
+}
+
+/* About Me section */
+section:nth-of-type(2) {
+    background-color: #fff;
+    text-align: center;
+}
+
+.myH2 {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.myP {
+    text-align: justify;
+    font-size: 1.8rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 700px) {
+    .myP {
+        padding: 2%;
+    }
+}
+
+/* Skills section */
+section:nth-of-type(3) {
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    margin-bottom: 30px;
+    text-align: center;
+    width: calc(50% - 20px);
+}
+
+@media screen and (max-width: 768px) {
+    .skill {
+        width: calc(100% - 20px);
+    }
+}
+
+.skill-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #00E676;
+    border-radius: 5px;
+}
+
+/* Projects section */
+section:nth-of-type(4) {
+    background-color: #fff;
+}
+
+.project-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.project-container:hover {
+    transform: scale(1.02);
+}
+
+.project-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.project-links a.clickable-link {
+    color: #fff;
+    background-color: #00E676;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-links a.clickable-link:hover {
+    background-color: #009960;
+}
+
+.unclickable-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #ccc; /* Change the color as per your preference */
+    color: #777;
+    text-decoration: none;
+    cursor: not-allowed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.unclickable-link:hover {
+    background-color: #ccc; /* Change the color as per your preference */
+}
+
+
+/* Contact section */
+section:nth-of-type(6) {
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #555;
+}
+
+.contact-info a {
+    color: #00E676;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-info a:hover {
+    color: #009960;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Language badges */
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.language-badge {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.8em;
+    border-radius: 3px;
+}
+
+/* Language Badge Colors */
+.language-badge.html {
+    background-color: #e44d26;
+    color: #ffffff;
+}
+
+.language-badge.css {
+    background-color: #264de4;
+    color: #ffffff;
+}
+
+.language-badge.javascript {
+    background-color: #f0db4f;
+    color: #000000;
+}
+
+/* Additional Language Badge Colors */
+.language-badge.python {
+    background-color: #3572A5;
+    color: #ffffff;
+}
+
+.language-badge.java {
+    background-color: #007396;
+    color: #ffffff;
+}
+
+.language-badge.cpp {
+    background-color: #00599C;
+    color: #ffffff;
+}
+
+.language-badge.swift {
+    background-color: #FFAC45;
+    color: #000000;
+}
+
+.language-badge.ruby {
+    background-color: #CC342D;
+    color: #ffffff;
+}
+
+.language-badge.php {
+    background-color: #777BB4;
+    color: #ffffff;
+}
+
+.language-badge.go {
+    background-color: #00ADD8;
+    color: #ffffff;
+}
+
+.language-badge.r {
+    background-color: #276DC3;
+    color: #ffffff;
+}
+
+/* Additional Language and Framework Badge Colors */
+.language-badge.python {
+    background-color: #3572A5;
+    color: #ffffff;
+}
+
+.language-badge.java {
+    background-color: #007396;
+    color: #ffffff;
+}
+
+.language-badge.cpp {
+    background-color: #00599C;
+    color: #ffffff;
+}
+
+.language-badge.swift {
+    background-color: #FFAC45;
+    color: #000000;
+}
+
+.language-badge.ruby {
+    background-color: #CC342D;
+    color: #ffffff;
+}
+
+.language-badge.php {
+    background-color: #777BB4;
+    color: #ffffff;
+}
+
+.language-badge.go {
+    background-color: #00ADD8;
+    color: #ffffff;
+}
+
+.language-badge.r {
+    background-color: #276DC3;
+    color: #ffffff;
+}
+
+/* Python Framework Badge Colors */
+.language-badge.django {
+    background-color: #092E20;
+    color: #ffffff;
+}
+
+.language-badge.flask {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.language-badge.pytorch {
+    background-color: #EE4C2C;
+    color: #ffffff;
+}
+
+.language-badge.tensorflow {
+    background-color: #FF6F00;
+    color: #ffffff;
+}
+
+/*d3js*/
+.language-badge.d3js {
+    background-color: #F9A03C;
+    color: #ffffff;
+}
+
+/* Add more language and framework badges as needed */
+

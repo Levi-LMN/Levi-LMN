@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>All Projects</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Project ID</th>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Languages Used</th>
+                <th>GitHub Link</th>
+                <th>Preview Link</th>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for project in all_projects %}
+            <tr>
+                <td>{{ project.ProjectID }}</td>
+                <td>{{ project.ProjectName }}</td>
+                <td>{{ project.Description }}</td>
+                <td>{{ project.LanguagesUsed }}</td>
+                <td><a href="{{ project.GitHubLink }}">{{ project.GitHubLink }}</a></td>
+                <td><a href="{{ project.PreviewLink }}">{{ project.PreviewLink }}</a></td>
+                <td>{{ project.Category }}</td>
+                <td>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary edit-btn" data-toggle="modal" data-target="#editModal{{ project.ProjectID }}" data-project-id="{{ project.ProjectID }}">
+                        Edit
+                    </button>
+                </td>
+            </tr>
+            <!-- Edit Modal -->
+<div class="modal fade" id="editModal{{ project.ProjectID }}" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Edit Project</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="editForm{{ project.ProjectID }}" method="POST" action="/edit_project/{{ project.ProjectID }}">
+                    <div class="form-group">
+                        <label for="projectName">Project Name:</label>
+                        <input type="text" class="form-control" id="projectName" name="project_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="languagesUsed">Languages Used:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="flask" name="languages_used[]" value="Flask">
+                            <label class="form-check-label" for="flask">Flask</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="html" name="languages_used[]" value="HTML">
+                            <label class="form-check-label" for="html">HTML</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="css" name="languages_used[]" value="CSS">
+                            <label class="form-check-label" for="css">CSS</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="javascript" name="languages_used[]" value="JavaScript">
+                            <label class="form-check-label" for="javascript">JavaScript</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="php" name="languages_used[]" value="PHP">
+                            <label class="form-check-label" for="php">PHP</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="java" name="languages_used[]" value="Java">
+                            <label class="form-check-label" for="java">Java</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="d3js" name="languages_used[]" value="D3.js">
+                            <label class="form-check-label" for="d3js">D3.js</label>
+                        </div>
+                        <!-- Add more checkboxes for other languages -->
+                    </div>
+                    <div class="form-group">
+                        <label for="githubLink">GitHub Link:</label>
+                        <input type="text" class="form-control" id="githubLink" name="github_link">
+                    </div>
+                    <div class="form-group">
+                        <label for="previewLink">Preview Link:</label>
+                        <input type="text" class="form-control" id="previewLink" name="preview_link">
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select class="form-control" id="category" name="category">
+                            <option value="software_development">Software Development</option>
+                            <option value="ethical_hacking">Ethical Hacking</option>
+                            <option value="open_source">Open Source</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" form="editForm{{ project.ProjectID }}" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Function to load project details into modal when edit button is clicked
+            $('.edit-btn').click(function() {
+                var projectId = $(this).data('project-id');
+
+                $.ajax({
+                    url: '/edit_project/' + projectId,
+                    type: 'GET',
+                    success: function(data) {
+                        // Populate modal fields with project details
+                        $('#editForm' + projectId + ' #projectName').val(data.ProjectName);
+                        $('#editForm' + projectId + ' #description').val(data.Description);
+                        $('#editForm' + projectId + ' #languagesUsed').val(data.LanguagesUsed);
+                        $('#editForm' + projectId + ' #githubLink').val(data.GitHubLink);
+                        $('#editForm' + projectId + ' #previewLink').val(data.PreviewLink);
+                        $('#editForm' + projectId + ' #category').val(data.Category);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error loading project details:', error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
