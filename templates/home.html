@@ -217,6 +217,12 @@
 }
 
 </style>
+    <style>
+    .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+</style>
 
 
 </head>
@@ -260,36 +266,67 @@
 
 
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div class="skill">
-            <span class="skill-title">Web Development</span>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 80%;"></div>
+
+
+<style>
+    .card:hover {
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<section id="skills" class="py-5">
+    <h2 class="text-center mb-5">Skills</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card border-0 shadow">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Web Development</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-primary" style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="card-text">HTML, CSS, JavaScript, PHP</p>
+                </div>
             </div>
         </div>
-        <div class="skill">
-            <span class="skill-title">App Development</span>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 75%;"></div>
+        <div class="col">
+            <div class="card border-0 shadow">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">App Development</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success" style="width: 75%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="card-text">Java, Kotlin, Swift</p>
+                </div>
             </div>
         </div>
-        <div class="skill">
-            <span class="skill-title">Penetration Testing</span>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 90%;"></div>
+        <div class="col">
+            <div class="card border-0 shadow">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Penetration Testing</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-warning" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="card-text">Python, Bash</p>
+                </div>
             </div>
         </div>
-        <div class="skill">
-            <span class="skill-title">Database Management</span>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 85%;"></div>
+        <div class="col">
+            <div class="card border-0 shadow">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Database Management</h5>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="card-text">SQL, MongoDB</p>
+                </div>
             </div>
         </div>
-        <!-- Add more skills as needed -->
     </div>
 </section>
+
+
 
 
 <!-- Projects section -->
