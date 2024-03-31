@@ -110,7 +110,7 @@
 
 
 <!-- Projects section -->
-<section id="projects">
+<section id="projects"> <center>
     <h2>Projects</h2>
 
     <!-- Software Development section -->
@@ -120,7 +120,7 @@
             {% for project in projects_by_category['software_development'] %}
                 <div class="col-md-4">
                     <div class="project-container software-development">
-                        <h4>{{ project.ProjectName }}</h4>
+                        <center><h4>{{ project.ProjectName }}</h4></center>
                         <p>{{ project.Description }}</p>
                         <p>Languages used:</p>
                         {% for language in project.LanguagesUsed.split(', ') %}
@@ -154,7 +154,7 @@
             {% for project in projects_by_category['ethical_hacking'] %}
                 <div class="col-md-4">
                     <div class="project-container ethical-hacking">
-                        <h4>{{ project.ProjectName }}</h4>
+                        <center><h4>{{ project.ProjectName }}</h4></center>
                         <p>{{ project.Description }}</p>
                         <p>Languages used:</p>
                         {% for language in project.LanguagesUsed.split(', ') %}
@@ -188,7 +188,7 @@
             {% for project in projects_by_category['open_source'] %}
                 <div class="col-md-4">
                     <div class="project-container open-source">
-                        <h4>{{ project.ProjectName }}</h4>
+                        <center><h4>{{ project.ProjectName }}</h4></center>
                         <p>{{ project.Description }}</p>
                         <p>Languages used:</p>
                         {% for language in project.LanguagesUsed.split(', ') %}
@@ -214,7 +214,8 @@
             {% endfor %}
         </div>
     </section>
-</section>
+</center></section>
+
 
 
 
