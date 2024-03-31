@@ -9,11 +9,7 @@ body {
     font-size: 12px;
 }
 
-body {
-    font-size: 1.6rem;
-    background-color: #f8f8f8;
-    color: #333;
-}
+
 
 /* Navbar styles */
 .navbar-text-center {
@@ -42,110 +38,141 @@ body {
     color: #ffc107;
 }
 
-/* Section styles */
-section {
-    padding: 80px 0;
-}
 
-/* Home section */
-.home {
-    width: 100%;
-    height: 100vh;
-    background-color: #111;
-    background-position: center top;
-    background-size: cover;
-}
 
-/* About Me section */
-section:nth-of-type(2) {
-    background-color: #fff;
-    text-align: center;
-}
-
-.myH2 {
-    font-size: 3.5rem;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.myP {
-    text-align: justify;
-    font-size: 1.8rem;
-    color: #555;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-@media all and (max-width: 700px) {
-    .myP {
-        padding: 2%;
+/*about*/
+    #about {
+        padding: 80px 0;
+        background-color: #f8f9fa; /* Set background color */
+        text-align: center;
     }
+
+    #about h2 {
+        font-size: 3.5rem; /* Increase heading font size */
+        color: #343a40; /* Heading color */
+        margin-bottom: 30px;
+        text-transform: uppercase; /* Uppercase heading text */
+        letter-spacing: 2px; /* Increase letter spacing */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add text shadow */
+    }
+
+    #about p {
+        font-size: 1.8rem; /* Paragraph font size */
+        color: #6c757d; /* Paragraph color */
+        line-height: 1.8; /* Set line height for better readability */
+        margin: 0 auto 30px; /* Center paragraph and add bottom margin */
+        max-width: 800px; /* Limit paragraph width for better readability */
+    }
+
+    #about p:first-of-type {
+        font-weight: bold; /* Make the first paragraph bold */
+    }
+
+    #about p:last-of-type {
+        font-style: italic; /* Make the last paragraph italic */
+    }
+
+    #about p a {
+        color: #007bff; /* Link color */
+        text-decoration: none; /* Remove underline from links */
+        transition: color 0.3s ease; /* Smooth transition for link color */
+    }
+
+    #about p a:hover {
+        color: #0056b3; /* Change link color on hover */
+    }
+
+    /* Add some animation to make the page more dynamic */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    #about h2, #about p {
+        animation: fadeIn 1s ease; /* Apply animation to headings and paragraphs */
+    }
+
+    /* Add background pattern for visual interest */
+    #about {
+        max-width: 100%;
+        background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    }
+
+    /* Add box shadow to create depth */
+    #about {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    #about button {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid black;
 }
+
+#about button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
 
 /* Skills section */
 section:nth-of-type(3) {
     background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.skill {
-    margin-bottom: 30px;
-    text-align: center;
-    width: calc(50% - 20px);
-}
-
-@media screen and (max-width: 768px) {
-    .skill {
-        width: calc(100% - 20px);
-    }
-}
-
-.skill-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.skill-bar {
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    background-color: #00E676;
-    border-radius: 5px;
-}
-
-/* Projects section */
-section:nth-of-type(4) {
-    background-color: #fff;
-}
-
-.project-container {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+ .project-container {
+    border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
     transition: transform 0.3s ease-in-out;
-    text-align: center;
     position: relative;
     z-index: 1;
+    background: linear-gradient(to bottom right, #667db6, #0082c8, #0082c8, #667db6); /* Gradient background */
+    color: #fff; /* Text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-container:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.project-links a {
+.project-container h3 {
+    font-size: 2rem; /* Increase heading font size */
+    margin-bottom: 15px;
+    color: #fff; /* Heading color */
+}
+
+.project-container p {
+    font-size: 1.6rem; /* Paragraph font size */
+    margin-bottom: 20px;
+}
+
+.project-container .language-badge {
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.4rem; /* Badge font size */
+    border-radius: 3px;
+}
+
+.project-container .project-links {
+    margin-top: 20px;
+}
+
+.project-container .project-links a {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
@@ -154,69 +181,40 @@ section:nth-of-type(4) {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.project-links a.clickable-link {
+.project-container .project-links a.clickable-link {
     color: #fff;
-    background-color: #00E676;
+    background-color: forestgreen;
     text-decoration: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.project-links a.clickable-link:hover {
-    background-color: #009960;
+.project-container .project-links a.clickable-link:hover {
+    background-color: darkslategray;
 }
 
-.unclickable-link {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    background-color: #ccc; /* Change the color as per your preference */
-    color: #777;
-    text-decoration: none;
+.project-container .project-links a.unclickable-link {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.1);
     cursor: not-allowed;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.unclickable-link:hover {
-    background-color: #ccc; /* Change the color as per your preference */
+.project-container .project-links a.unclickable-link:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Software Development Projects */
+.project-container.software-development {
+    background: linear-gradient(to bottom right, #2C3E50, #3498DB); /* Gradient background for Software Development */
+}
+
+/* Ethical Hacking Projects */
+.project-container.ethical-hacking {
+    background: linear-gradient(to bottom right, #5D4157, #A8CABA); /* Gradient background for Ethical Hacking */
+}
+/* Open Source Projects */
+.project-container.open-source {
+    background: linear-gradient(to bottom right, #FF6F61, #6A5ACD); /* Gradient background for Open Source */
 }
 
 
-/* Contact section */
-section:nth-of-type(6) {
-    background-color: #fff;
-    text-align: center;
-}
-
-.contact-info {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-info p {
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    color: #555;
-}
-
-.contact-info a {
-    color: #00E676;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-    display: inline-flex;
-    align-items: center;
-}
-
-.contact-info a:hover {
-    color: #009960;
-}
-
-.contact-info i {
-    margin-right: 10px;
-    font-size: 24px;
-}
 
 /* Language badges */
 h2 {
@@ -361,4 +359,37 @@ h2 {
 }
 
 /* Add more language and framework badges as needed */
+
+
+/*contact*/
+ .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .card:hover {
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+/*footer*/
+.foot-div{
+    background-color: black;
+    color: white;
+
+}
+
 
