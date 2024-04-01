@@ -18,6 +18,10 @@ body {
     transform: translateX(-50%);
 }
 
+.navbar-links {
+    text-align: center;
+}
+
 .navbar-links li {
     display: inline-block;
     margin-right: 20px;
@@ -41,46 +45,48 @@ body {
 
 
 /*about*/
-    #about {
-        padding: 80px 0;
-        background-color: #f8f9fa; /* Set background color */
-        text-align: center;
-    }
+    /* About section */
+#about {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    position: relative;
+}
 
-    #about h2 {
-        font-size: 3.5rem; /* Increase heading font size */
-        color: #343a40; /* Heading color */
-        margin-bottom: 30px;
-        text-transform: uppercase; /* Uppercase heading text */
-        letter-spacing: 2px; /* Increase letter spacing */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add text shadow */
-    }
+#about h2 {
+    font-size: 3.5rem;
+    color: #343a40;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    #about p {
-        font-size: 1.8rem; /* Paragraph font size */
-        color: #6c757d; /* Paragraph color */
-        line-height: 1.8; /* Set line height for better readability */
-        margin: 0 auto 30px; /* Center paragraph and add bottom margin */
-        max-width: 800px; /* Limit paragraph width for better readability */
-    }
+#about p {
+    font-size: 1.8rem;
+    color: #6c757d;
+    line-height: 1.8;
+    margin: 0 auto 30px;
+    max-width: 800px;
+}
 
-    #about p:first-of-type {
-        font-weight: bold; /* Make the first paragraph bold */
-    }
+#about p:first-of-type {
+    font-weight: bold;
+}
 
-    #about p:last-of-type {
-        font-style: italic; /* Make the last paragraph italic */
-    }
+#about p:last-of-type {
+    font-style: italic;
+}
 
-    #about p a {
-        color: #007bff; /* Link color */
-        text-decoration: none; /* Remove underline from links */
-        transition: color 0.3s ease; /* Smooth transition for link color */
-    }
+#about p a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
 
-    #about p a:hover {
-        color: #0056b3; /* Change link color on hover */
-    }
+#about p a:hover {
+    color: #0056b3;
+}
 
     /* Add some animation to make the page more dynamic */
     @keyframes fadeIn {
@@ -88,34 +94,30 @@ body {
         to { opacity: 1; }
     }
 
-    #about h2, #about p {
-        animation: fadeIn 1s ease; /* Apply animation to headings and paragraphs */
-    }
+    /*#about h2, #about p {*/
+    /*    animation: fadeIn 1s ease; !* Apply animation to headings and paragraphs *!*/
+    /*}*/
 
-    /* Add background pattern for visual interest */
-    #about {
-        max-width: 100%;
-        background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-    }
+    /*/* Add background pattern for visual interest */*/
+    /*#about {*/
+    /*    max-width: 100%;*/
+    /*    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');*/
+    /*}*/
 
     /* Add box shadow to create depth */
     #about {
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
     #about button {
-    background-color: white; /* Green */
-    border: none;
+    background-color: white;
+    border: 2px solid black;
     color: black;
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 8px;
-    border: 2px solid black;
 }
 
 #about button:hover {
@@ -124,22 +126,39 @@ body {
 }
 
 
+/* Ensure all content stays within the bounds of the viewport */
+.container {
+    max-width: 100%;
+}
+
+.card {
+    width: 100%;
+}
+
+/* Center align text within the card body */
+.card-body {
+    text-align: center;
+}
+
+/* Center the contact cards */
+.card {
+    margin-bottom: 20px;
+}
+
 
 
 /* Skills section */
 section:nth-of-type(3) {
-    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    padding: 80px 20px;
 }
 
- .project-container {
+.project-container {
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 30px;
-    transition: transform 0.3s ease-in-out;
     position: relative;
     z-index: 1;
-    background: linear-gradient(to bottom right, #667db6, #0082c8, #0082c8, #667db6); /* Gradient background */
-    color: #fff; /* Text color */
+    color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -147,6 +166,7 @@ section:nth-of-type(3) {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 .project-container h3 {
     font-size: 2rem; /* Increase heading font size */
@@ -218,14 +238,13 @@ section:nth-of-type(3) {
 
 /* Language badges */
 h2 {
-    text-align: center;
     font-size: 3rem;
     color: #333;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .language-badge {
-    display: inline-block;
     padding: 0.2em 0.5em;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
@@ -396,6 +415,11 @@ h2 {
 
 
 /*contact*/
+/* Contact section */
+.contact-info {
+    padding: 80px 20px;
+    text-align: center;
+}
  .contact-info p {
             margin-bottom: 10px;
         }
@@ -419,11 +443,12 @@ h2 {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-/*footer*/
-.foot-div{
+/* Footer */
+.foot-div {
     background-color: black;
     color: white;
-
+    padding: 20px 0;
+    text-align: center;
 }
 
 
