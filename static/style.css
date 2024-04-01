@@ -358,6 +358,40 @@ h2 {
     color: #ffffff;
 }
 
+/* Cybersecurity Language Badge Colors */
+.language-badge.python {
+    background-color: #3572A5;
+    color: #ffffff;
+}
+
+.language-badge.bash {
+    background-color: #4EAA25;
+    color: #ffffff;
+}
+
+.language-badge.powershell {
+    background-color: #5391FE;
+    color: #ffffff;
+}
+
+.language-badge.c {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.language-badge.cplusplus {
+    background-color: #00599C;
+    color: #ffffff;
+}
+
+.language-badge.assembly {
+    background-color: #6E4C13;
+    color: #ffffff;
+}
+
+/* Add more cybersecurity languages as needed */
+
+
 /* Add more language and framework badges as needed */
 
 
