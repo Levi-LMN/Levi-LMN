@@ -92,7 +92,7 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-brick-w
 
 #about p {
     font-size: 1.8rem;
-    color: #6c757d;
+    color: honeydew;
     line-height: 1.8;
     margin: 0 auto 30px;
     max-width: 800px;
@@ -464,7 +464,6 @@ h2 {
 
 /* Footer */
 .foot-div {
-    color: white;
     padding: 20px 0;
     text-align: center;
 }
