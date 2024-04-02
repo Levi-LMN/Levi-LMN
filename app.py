@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 app = Flask(__name__)
 app.secret_key = 'huqweitfiqv676%^$ ^%E% E@F#EIJ%REIQ&^REC I&'
@@ -113,6 +114,18 @@ def edit_project(project_id):
         'Category': project.Category
     })
 
+# Function to count visitors
+def count_visitors():
+    if not os.path.exists('visitor_log.txt'):
+        return 0
+    with open('visitor_log.txt', 'r') as f:
+        return sum(1 for line in f)
+
+# Route to display the visitor count
+@app.route('/visitor_count', methods=['GET'])
+def visitor_count():
+    count = count_visitors()
+    return render_template('visitor_count.html', count=count)
 
 if __name__ == '__main__':
     with app.app_context():
