@@ -7,6 +7,8 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 62.5%;
     font-size: 12px;
+
+
 }
 
 
@@ -43,19 +45,45 @@ body {
 }
 
 
+#skills {
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#projects{
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#contact{
+    background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+#footer{
+    background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
 
 /*about*/
-    /* About section */
 #about {
     padding: 80px 20px;
-    background-color: #f8f9fa;
     text-align: center;
     position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 #about h2 {
     font-size: 3.5rem;
-    color: #343a40;
+    color: whitesmoke;
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -94,20 +122,11 @@ body {
         to { opacity: 1; }
     }
 
-    /*#about h2, #about p {*/
-    /*    animation: fadeIn 1s ease; !* Apply animation to headings and paragraphs *!*/
-    /*}*/
-
-    /*/* Add background pattern for visual interest */*/
-    /*#about {*/
-    /*    max-width: 100%;*/
-    /*    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');*/
-    /*}*/
-
-    /* Add box shadow to create depth */
-    #about {
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    #about h2, #about p {
+        animation: fadeIn 1s ease; /* Apply animation to headings and paragraphs */
     }
+
+
     #about button {
     background-color: white;
     border: 2px solid black;
@@ -239,7 +258,7 @@ section:nth-of-type(3) {
 /* Language badges */
 h2 {
     font-size: 3rem;
-    color: #333;
+    color: white;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -445,7 +464,6 @@ h2 {
 
 /* Footer */
 .foot-div {
-    background-color: black;
     color: white;
     padding: 20px 0;
     text-align: center;
