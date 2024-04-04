@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
 import os
+from flask import Flask, render_template, request, session
 
 app = Flask(__name__)
 app.secret_key = 'huqweitfiqv676%^$ ^%E% E@F#EIJ%REIQ&^REC I&'
@@ -121,11 +122,17 @@ def count_visitors():
     with open('visitor_log.txt', 'r') as f:
         return sum(1 for line in f)
 
-# Route to display the visitor count
+# Route to display the visitor count and IP address
 @app.route('/visitor_count', methods=['GET'])
 def visitor_count():
-    count = count_visitors()
-    return render_template('visitor_count.html', count=count)
+    # Increment visitor count only if the session does not have a 'visited' flag
+    if 'visited' not in session:
+        session['visited'] = True
+        session.modified = True
+
+    count = len(session)  # Count the number of active sessions
+    user_ip = request.remote_addr
+    return render_template('visitor_count.html', count=count, user_ip=user_ip)
 
 if __name__ == '__main__':
     with app.app_context():
