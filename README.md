@@ -2,9 +2,9 @@
 
 ![](https://komarev.com/ghpvc/?username=Levi-LMN)
 
-- 🔭 I’m currently working on **Ticketsphere - A public ticketing System  [Ticketsphere.com](https://lmn.pythonanywhere.com)**
-- 🌱 I’m currently learning **Liquid**
-- 💬 Ask me about **python, Flask, Django, C or #C**
+- 🔭 I’m currently working on **Smart Gabage Collection - An Android app using Java and Kotlin  **
+- 🌱 I’m currently learning **Asp.Net**
+- 💬 Ask me about **python, Flask, Django, LiquidJs C or #C**
 - 📫 How to reach me **Mukuhalevi@gmail.com**
 - 👨‍💻 All of my projects are available at **[Levimukuha.co.ke](https://levimukuha.pythonanywhere.com/)**
 
