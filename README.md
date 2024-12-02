@@ -2,7 +2,7 @@
 
 ![](https://komarev.com/ghpvc/?username=Levi-LMN)
 
-- 🔭 I’m currently working on **Smart Gabage Collection - An Android app using Java and Kotlin  **
+- 🔭 I’m currently working on **Smart Gabage Collection - An Android app using Java and Kotlin**
 - 🌱 I’m currently learning **Asp.Net**
 - 💬 Ask me about **python, Flask, Django, LiquidJs C or #C**
 - 📫 How to reach me **Mukuhalevi@gmail.com**
